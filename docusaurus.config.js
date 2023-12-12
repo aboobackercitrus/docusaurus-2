@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const Banner = require('./src/components/Banner');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -70,6 +71,11 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'custom',
+            position: 'left',
+            content: <Banner />, // JSX syntax
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
